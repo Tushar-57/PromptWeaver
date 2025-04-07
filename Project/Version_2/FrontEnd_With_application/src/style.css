@@ -1,0 +1,238 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8b5cf6;
+}
+
+body {
+  @apply bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen;
+}
+
+.creativity-slider::-webkit-slider-thumb {
+  @apply appearance-none w-6 h-6 rounded-full bg-primary-500 cursor-pointer hover:scale-110 transition-transform;
+}
+
+.creativity-slider::-moz-range-thumb {
+  @apply w-6 h-6 rounded-full bg-primary-500 cursor-pointer border-none hover:scale-110 transition-transform;
+}
+
+.creativity-track {
+  @apply h-2 rounded-full bg-gradient-to-r from-blue-500 via-primary-500 to-pink-500;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary-100;
+}
+
+.format-option {
+  @apply cursor-pointer p-2 rounded transition-all hover:bg-primary-100;
+}
+
+.format-option.selected {
+  @apply bg-primary-500 text-white;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glass-effect {
+  @apply backdrop-blur-sm bg-white/70;
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --primary-light: #c4b5fd;
+  --primary-ultralight: #ede9fe;
+}
+
+body {
+  @apply bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen;
+}
+
+/* Enhanced slider styles */
+.slider-theme {
+  @apply appearance-none h-2 rounded-full bg-gradient-to-r from-indigo-300 via-primary-400 to-pink-400;
+}
+
+.slider-theme::-webkit-slider-thumb {
+  @apply appearance-none w-5 h-5 rounded-full bg-primary-500 cursor-pointer border-4 border-white shadow-md hover:scale-110 transition-all;
+}
+
+.slider-theme::-moz-range-thumb {
+  @apply w-5 h-5 rounded-full bg-primary-500 cursor-pointer border-4 border-white shadow-md hover:scale-110 transition-all;
+}
+
+/* Improved toggle switch */
+.toggle-theme {
+  @apply relative w-10 h-5 rounded-full bg-gray-200 cursor-pointer appearance-none transition-colors duration-300;
+}
+
+.toggle-theme:checked {
+  @apply bg-primary-500;
+}
+
+.toggle-theme:before {
+  content: '';
+  @apply absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full transition-transform duration-300 shadow-sm;
+}
+
+.toggle-theme:checked:before {
+  @apply transform translate-x-5;
+}
+
+.toggle-theme:focus {
+  @apply outline-none ring-2 ring-primary-200;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary-100;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Personality option cards */
+.personality-option {
+  @apply border border-gray-200 rounded-lg p-3 bg-white/70 transition-all cursor-pointer hover:shadow-md;
+}
+
+.personality-option.selected {
+  @apply border-primary-500 bg-primary-50 shadow-md;
+}
+
+.personality-option-image {
+  @apply rounded-full object-cover mx-auto mb-2 border-2;
+  width: 60px;
+  height: 60px;
+}
+
+.personality-option.selected .personality-option-image {
+  @apply border-primary-500;
+}
+
+/* Floating animation for title */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glass effect for cards */
+.glass-effect {
+  @apply backdrop-blur-sm bg-white/70 border border-white/80 shadow-sm;
+}
+
+/* Emoji indicator style */
+.emoji-indicator {
+  @apply inline-flex gap-1 text-lg;
+}
+
+/* Pulse animation for new features */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-animation {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Format and length option styles */
+.format-option {
+  @apply cursor-pointer p-2 rounded-lg transition-all hover:bg-primary-100;
+}
+
+.format-option.selected {
+  @apply bg-primary-500 text-white font-medium;
+}
+
+/* Badge for new features */
+.new-badge {
+  @apply absolute -top-2 -right-2 bg-pink-500 text-white text-xs rounded-full px-2 py-0.5 font-bold;
+}
+
+/* Tooltip styles */
+.tooltip {
+  @apply relative inline-block;
+}
+
+.tooltip .tooltip-text {
+  @apply invisible absolute z-10 p-2 text-xs text-white bg-gray-800 rounded-md opacity-0 transition-opacity duration-300 whitespace-nowrap;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltip-text {
+  @apply visible opacity-100;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #4b5563 transparent transparent transparent;
+}
+
+input:focus, 
+textarea:focus,
+select:focus {
+  outline: none;
+  ring-width: 0;
+}
+
+/* /* Add custom focus style that matches your design */
+.animate-spin-on-hover:hover {
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Pulse animation on click */
+button:active {
+  animation: pulse 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  button {
+    right: 1rem !important;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+  span.text-lg {
+    font-size: 1.25rem;
+  }
+}
