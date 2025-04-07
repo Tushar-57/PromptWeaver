@@ -2,8 +2,15 @@
 
 A service for generating detailed LLM-ready prompts using the CAMEL framework and Ollama models. Designed for dynamic prompt engineering with customizable parameters.
 
-## Features_Version_2
+## Click to View Application Demo
 
+<a href="https://drive.google.com/uc?export=download&id=1ssm3lyMhmZZ-VM6xLtpHKCXHUdtpKfLB">
+  <img src="https://drive.google.com/uc?export=view&id=1ssm3lyMhmZZ-VM6xLtpHKCXHUdtpKfLB" 
+       alt="PW Demo" 
+       style="width: 400px; height: auto; border-radius: 8px;">
+</a>
+
+## Version_2
 - Dynamic prompt template generation
 - Integration with Ollama local models (llama3, mistral, etc.)
 - Customizable parameters for:
@@ -15,7 +22,7 @@ A service for generating detailed LLM-ready prompts using the CAMEL framework an
 - Detailed logging and debugging
 - Token usage tracking
 
-## Learning Material_Version_1
+## Version_1 (Learning)
 
 - **Intent Classification**: Uses zero-shot learning to classify user input into predefined intents (e.g., "learn", "explain", "compare").  
 - **Named Entity Recognition (NER)**: Extracts and maps entities (e.g., "Technology", "Domain", "Tool") from user input.  
@@ -31,8 +38,7 @@ A service for generating detailed LLM-ready prompts using the CAMEL framework an
 - **Logging and Debugging**: Tools for tracking and improving system performance.  
 
 ## Use Cases  
-
-- **AI Assistants**: Generate context-aware prompts for AI assistants like ChatGPT.  
+  
 - **Educational Tools**: Create tailored prompts for learning and teaching.  
 - **Content Creation**: Assist in generating structured content for blogs, tutorials, and more.  
 
