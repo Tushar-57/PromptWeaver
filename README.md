@@ -4,7 +4,7 @@ A service for generating detailed LLM-ready prompts using the CAMEL framework an
 
 ## Click to View Application Demo
 
-<a href="https://drive.google.com/uc?export=download&id=1ssm3lyMhmZZ-VM6xLtpHKCXHUdtpKfLB">
+<a href="https://drive.google.com/file/d/1VukI2ZzcDP1H_cw_D4P9QPejF3RV0GDh/view?usp=sharing">
   <img src="https://drive.google.com/uc?export=view&id=1ssm3lyMhmZZ-VM6xLtpHKCXHUdtpKfLB" 
        alt="PW Demo" 
        style="width: 400px; height: auto; border-radius: 8px;">
