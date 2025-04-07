@@ -1,6 +1,21 @@
-# PromptWeaver 🚀  
+# PromptWeaver - LLM Prompt Generation Service 🚀   
 
-## Key Features  
+A service for generating detailed LLM-ready prompts using the CAMEL framework and Ollama models. Designed for dynamic prompt engineering with customizable parameters.
+
+## Features_Version_2
+
+- Dynamic prompt template generation
+- Integration with Ollama local models (llama3, mistral, etc.)
+- Customizable parameters for:
+  - Personality/tone control
+  - Creativity levels
+  - Audience targeting
+  - Output formatting
+  - Response length
+- Detailed logging and debugging
+- Token usage tracking
+
+## Learning Material_Version_1
 
 - **Intent Classification**: Uses zero-shot learning to classify user input into predefined intents (e.g., "learn", "explain", "compare").  
 - **Named Entity Recognition (NER)**: Extracts and maps entities (e.g., "Technology", "Domain", "Tool") from user input.  
